@@ -22,6 +22,9 @@ source=(
         "dxgkrnl-dkms.hook"
         "inject-dxgmodule.sh"
         "build-dxgkrnl.sh"
+        "README.md"
+        "TODO.md"
+        "LICENSE"
 )
 
 sha256sums=('SKIP'
@@ -30,7 +33,10 @@ sha256sums=('SKIP'
             'eb92dba923a9c8e526e028b8d3705ae08c6c3b0a0028b58781c4ff6e3e4d1fa5'
             '3aaeb743db6961d0e1b641eb5bb028af65206cabe7a3720bd9a7b2a8f1c929b4'
             'b59db39f6fcbb2520f421fe0ae8f7d81797f7ccea141fcfa0d577466ca0a0821'
-            'SKIP')
+            '35a2729af90e5b5162326304e617c0e800338a16bfa7607845811cb1f0fc52b0'
+            'a64a43262b10466d3ea65fff4d5c99d6b99da3f739574a1a8e101f09f5e80e6a'
+            '46721e18aa80499a8813449cbc9346a71d76e459ac153655d96b74c3d4fe326c'
+            'f6b78c087c3ebdf0f3c13415070dd480a3f35d8fc76f3d02180a407c1c812f79')
 
 pkgver() {
   cd "WSL2-Linux-Kernel"

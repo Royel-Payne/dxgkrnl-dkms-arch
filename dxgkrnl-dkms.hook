@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = dxgkrnl-dkms-git
+
+[Action]
+Description = 🔧 Injecting patched dxgmodule.c before DKMS builds...
+When = PostTransaction
+Exec = /bin/sh
+Exec = /usr/bin/inject-dxgmodule.sh

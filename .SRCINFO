@@ -1,6 +1,6 @@
 pkgbase = dxgkrnl-dkms-git
 	pkgdesc = DirectX linux drivers for GPU-PV (dkms)
-	pkgver = 5.6.rc2.r73841.gbb562a9d7106
+	pkgver = 5.6.rc2.r169908.g6ac7abbd97a0
 	pkgrel = 1
 	epoch = 1
 	url = https://github.com/microsoft/WSL2-Linux-Kernel/
@@ -9,14 +9,28 @@ pkgbase = dxgkrnl-dkms-git
 	license = GPL2
 	makedepends = git
 	makedepends = linux-headers
+	makedepends = bc
 	depends = dkms
 	provides = dxgkrnl
 	conflicts = dxgkrnl
-	source = git+https://github.com/microsoft/WSL2-Linux-Kernel.git#branch=linux-msft-wsl-5.10.y
+	source = git+https://github.com/microsoft/WSL2-Linux-Kernel.git#branch=linux-msft-wsl-5.15.y
 	source = dkms.conf
 	source = extra-defines.h
+	source = patch-dxgmodule.sh
+	source = dxgkrnl-dkms.hook
+	source = inject-dxgmodule.sh
+	source = build-dxgkrnl.sh
+	source = README.md
+	source = TODO.md
+	source = LICENSE
 	sha256sums = SKIP
-	sha256sums = a6b89d054a3d0cc9d18b3ed1c0efd6acde4b22b3fad9cc6a378073af1e585f7b
+	sha256sums = 952603b6cbf4fcccb786b3afef6f5b0d7606bddbeec0719ca0a73a2dfd337809
 	sha256sums = 25e71dcbd2a787d5a5b610ec218287cd781def3b0d821f31b071f5f7183cbc71
+	sha256sums = eb92dba923a9c8e526e028b8d3705ae08c6c3b0a0028b58781c4ff6e3e4d1fa5
+	sha256sums = 3aaeb743db6961d0e1b641eb5bb028af65206cabe7a3720bd9a7b2a8f1c929b4
+	sha256sums = b59db39f6fcbb2520f421fe0ae8f7d81797f7ccea141fcfa0d577466ca0a0821
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
 
 pkgname = dxgkrnl-dkms-git
